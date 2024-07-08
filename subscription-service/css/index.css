@@ -1,0 +1,104 @@
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background: linear-gradient(to right, #ff7a28, #242bff);
+}
+
+header h1, header p {
+  margin: 0;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.border-gradient {
+  border: 3px solid;
+  border-image: linear-gradient(to right, #ff7a28, #242bff);
+  border-image-slice: 1;
+}
+
+.card-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Распределяет содержимое по вертикали */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 10px;
+}
+
+.new-price {
+  color: #ff5722;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+}
+
+ul li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary {
+  background-color: #ff7a28;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #242bffd1;
+  border: none;
+}
+
+/* .btn-primary:hover, .btn-secondary:hover {
+  transform: translateY(-5px);
+} */
+
+@media (max-width: 768px) {
+  .card {
+      margin-bottom: 30px;
+  }
+}
